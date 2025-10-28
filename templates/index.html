@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ejemplo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Ejemplo</h1>
+        <a href="{{ url_for('ver_carrito') }}">Ver Carrito ({{ carrito|length if carrito else 0 }})</a>
+    </header>
+
+    <main>
+        <div class="productos">
+            {% for producto in productos %}
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/' + producto.imagen) }}" alt="{{ producto.nombre }}">
+                <h3>{{ producto.nombre }}</h3>
+                <p>Precio: ${{ producto.precio }}</p>
+                <a href="{{ url_for('agregar_carrito', producto_id=producto.id) }}" class="btn">Agregar al carrito</a>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
