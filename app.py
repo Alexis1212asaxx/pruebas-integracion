@@ -30,4 +30,5 @@ def ver_carrito():
 if __name__ == "__main__":
     app.run(debug=True)
 
-#codigo de prueba en tests/test_app.py
+#codigo de prueba en tests/test_app.py   
+#e
