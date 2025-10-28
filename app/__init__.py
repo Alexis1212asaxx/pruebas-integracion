@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
+from app import app, productos, carrito
+
 
 app = Flask(__name__)
 #Es una aplicacion de tienda en linea muy basica
