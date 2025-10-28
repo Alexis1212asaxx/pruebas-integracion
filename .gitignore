@@ -1,0 +1,38 @@
+# Entorno virtual
+venv/
+*.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs
+*.log
+
+# Carpeta de pytest cache
+.pytest_cache/
+
+# Configuraciones locales de IDE
+.vscode/
+.idea/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de base de datos temporales (si tienes SQLite por ejemplo)
+*.db
+*.sqlite3
+
+# Archivos de paquetes instalados (no subir)
+*.egg-info/
+dist/
+build/
+
+# Archivos de cobertura de tests
+.coverage
+htmlcov/
+
+# Otros temporales
+*.swp
