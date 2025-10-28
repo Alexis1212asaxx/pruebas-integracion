@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
-
+#Es una aplicacion de tienda en linea muy basica
 # Productos simulados
 productos = [
     {"id": 1, "nombre": "Camiseta", "precio": 20, "imagen": "camiseta.jpg"},
@@ -29,3 +29,5 @@ def ver_carrito():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+#codigo de prueba en tests/test_app.py
